@@ -23,7 +23,19 @@ final class MenuGroupingTests: XCTestCase {
         XCTAssertEqual(sections[safe: 2]?.category, "desserts")
         
     }
-    func testMenuWithOneCategoryReturnOneSection() {
+    func testMenuWithOneCategoryReturnOneSection() throws {
+        let menu: [MenuItem] = [
+            .fixture(category: "pastas", name: "name"),
+            .fixture(category: "pastas", name: "other name"),
+        ]
+        let sections = groupMenuByCategory(menu)
+        
+        XCTAssertEqual(sections.count, 1)
+        
+        let section = try XCTUnwrap(sections.first)
+        XCTAssertEqual(section.items.count, 2)
+        XCTAssertEqual(section.items.first?.name, "name")
+        XCTAssertEqual(section.items.last?.name, "other name")
     }
     func testEmptyMenuReturnsEmptySections() {
         let menu = [MenuItem]()
