@@ -22,6 +22,10 @@
 		3C8848BB2C3F6D5C00B5BE50 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848BA2C3F6D5C00B5BE50 /* MenuRow.swift */; };
 		3C8848BD2C3F6D8A00B5BE50 /* MenuRowViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848BC2C3F6D8A00B5BE50 /* MenuRowViewModelTests.swift */; };
 		3C8848BF2C3F6E6200B5BE50 /* MenuRow.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848BE2C3F6E6200B5BE50 /* MenuRow.ViewModel.swift */; };
+		3C8848C12C3F759200B5BE50 /* MenuListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848C02C3F759200B5BE50 /* MenuListViewModelTests.swift */; };
+		3C8848C32C3F780300B5BE50 /* MenuList.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848C22C3F780300B5BE50 /* MenuList.ViewModel.swift */; };
+		3C8848C52C3F933200B5BE50 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848C42C3F933200B5BE50 /* MenuFetching.swift */; };
+		3C8848C72C3F940700B5BE50 /* MenuFetchingSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848C62C3F940700B5BE50 /* MenuFetchingSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		3C8848BA2C3F6D5C00B5BE50 /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
 		3C8848BC2C3F6D8A00B5BE50 /* MenuRowViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowViewModelTests.swift; sourceTree = "<group>"; };
 		3C8848BE2C3F6E6200B5BE50 /* MenuRow.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.ViewModel.swift; sourceTree = "<group>"; };
+		3C8848C02C3F759200B5BE50 /* MenuListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModelTests.swift; sourceTree = "<group>"; };
+		3C8848C22C3F780300B5BE50 /* MenuList.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.ViewModel.swift; sourceTree = "<group>"; };
+		3C8848C42C3F933200B5BE50 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
+		3C8848C62C3F940700B5BE50 /* MenuFetchingSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				3C8848862C3E411D00B5BE50 /* AlbertosApp.swift */,
+				3C8848C42C3F933200B5BE50 /* MenuFetching.swift */,
+				3C8848C62C3F940700B5BE50 /* MenuFetchingSample.swift */,
 				3C8848882C3E411D00B5BE50 /* MenuList.swift */,
+				3C8848C22C3F780300B5BE50 /* MenuList.ViewModel.swift */,
 				3C8848BA2C3F6D5C00B5BE50 /* MenuRow.swift */,
 				3C8848BE2C3F6E6200B5BE50 /* MenuRow.ViewModel.swift */,
 				3C88488A2C3E412200B5BE50 /* Assets.xcassets */,
@@ -138,6 +149,7 @@
 				3C8848B62C3F622900B5BE50 /* MenuItem+Fixture.swift */,
 				3C8848B82C3F68C700B5BE50 /* MenuSection+Fixture.swift */,
 				3C8848BC2C3F6D8A00B5BE50 /* MenuRowViewModelTests.swift */,
+				3C8848C02C3F759200B5BE50 /* MenuListViewModelTests.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -281,11 +293,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8848C32C3F780300B5BE50 /* MenuList.ViewModel.swift in Sources */,
 				3C8848B12C3E42FE00B5BE50 /* MenuItem.swift in Sources */,
+				3C8848C52C3F933200B5BE50 /* MenuFetching.swift in Sources */,
 				3C8848892C3E411D00B5BE50 /* MenuList.swift in Sources */,
 				3C8848B32C3E430B00B5BE50 /* MenuSection.swift in Sources */,
 				3C8848BF2C3F6E6200B5BE50 /* MenuRow.ViewModel.swift in Sources */,
 				3C8848872C3E411D00B5BE50 /* AlbertosApp.swift in Sources */,
+				3C8848C72C3F940700B5BE50 /* MenuFetchingSample.swift in Sources */,
 				3C8848BB2C3F6D5C00B5BE50 /* MenuRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C8848B92C3F68C700B5BE50 /* MenuSection+Fixture.swift in Sources */,
+				3C8848C12C3F759200B5BE50 /* MenuListViewModelTests.swift in Sources */,
 				3C8848B52C3F5FF500B5BE50 /* Array+Safe.swift in Sources */,
 				3C8848B72C3F622900B5BE50 /* MenuItem+Fixture.swift in Sources */,
 				3C8848BD2C3F6D8A00B5BE50 /* MenuRowViewModelTests.swift in Sources */,
