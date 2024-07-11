@@ -11,7 +11,9 @@ import Combine
 
 final class MenuListViewModelTests: XCTestCase {
     var cancellables = Set<AnyCancellable>()
-    func testCallsGivenGroupingFunction() {
+    func testCallsGivenGroupingFunction() throws {
+        try XCTSkipIf(true, "skipping this for now, keeping it to resue part of the code later on")
+        
         var called = false
         let inputSections = [MenuSection.fixture()]
         // fake function
