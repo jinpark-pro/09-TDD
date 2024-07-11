@@ -10,6 +10,7 @@ import SwiftUI
 struct MenuList: View {
     let sections: [MenuSection]
     
+    
     var body: some View {
         List {
             ForEach(sections) { section in
@@ -24,5 +25,7 @@ struct MenuList: View {
 }
 
 #Preview {
-    MenuList(sections: groupMenuByCategory(menu))
+    NavigationStack {
+        MenuList(sections: groupMenuByCategory(menu))
+    }
 }

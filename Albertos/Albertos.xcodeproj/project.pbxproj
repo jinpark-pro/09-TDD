@@ -16,6 +16,8 @@
 		3C8848A42C3E412200B5BE50 /* AlbertosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848A32C3E412200B5BE50 /* AlbertosUITestsLaunchTests.swift */; };
 		3C8848B12C3E42FE00B5BE50 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848B02C3E42FE00B5BE50 /* MenuItem.swift */; };
 		3C8848B32C3E430B00B5BE50 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848B22C3E430B00B5BE50 /* MenuSection.swift */; };
+		3C8848B52C3F5FF500B5BE50 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848B42C3F5FF500B5BE50 /* Array+Safe.swift */; };
+		3C8848B72C3F622900B5BE50 /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8848B62C3F622900B5BE50 /* MenuItem+Fixture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		3C8848A32C3E412200B5BE50 /* AlbertosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3C8848B02C3E42FE00B5BE50 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		3C8848B22C3E430B00B5BE50 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		3C8848B42C3F5FF500B5BE50 /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		3C8848B62C3F622900B5BE50 /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				3C8848972C3E412200B5BE50 /* MenuGroupingTests.swift */,
+				3C8848B62C3F622900B5BE50 /* MenuItem+Fixture.swift */,
+				3C8848B42C3F5FF500B5BE50 /* Array+Safe.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -274,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8848B52C3F5FF500B5BE50 /* Array+Safe.swift in Sources */,
+				3C8848B72C3F622900B5BE50 /* MenuItem+Fixture.swift in Sources */,
 				3C8848982C3E412200B5BE50 /* MenuGroupingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

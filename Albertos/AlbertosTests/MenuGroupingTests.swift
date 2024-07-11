@@ -8,28 +8,22 @@
 import XCTest
 @testable import Albertos
 
-extension Array {
-    subscript(safe index: Index) -> Element? {
-        0 <= index && index < count ? self[index] : nil
-    }
-}
-
 final class MenuGroupingTests: XCTestCase {
-    func testMenuWithManyCategoriesReturnsOneSectionPerCategory() {
-        
-    }
-    func testMenuWithOneCategoryReturnOneSection() {
-        let menu = [
-            MenuItem(category: "pastas", name: "a pasta"),
-            MenuItem(category: "drinks", name: "coke"),
-            MenuItem(category: "pastas", name: "another pasta"),
-//            MenuItem(category: "desserts", name: "a dessert"),
+    func testMenuWithManyCategoriesReturnsOneSectionPerCategoryInReverseAlphabeticalOrder() {
+        let menu: [MenuItem] = [
+            .fixture(category: "pastas", name: "a pasta"),
+            .fixture(category: "drinks", name: "coke"),
+            .fixture(category: "pastas", name: "another pasta"),
+            .fixture(category: "desserts", name: "a dessert"),
         ]
         let sections = groupMenuByCategory(menu)
         XCTAssertEqual(sections.count, 3)
         XCTAssertEqual(sections[safe: 0]?.category, "pastas")
         XCTAssertEqual(sections[safe: 1]?.category, "drinks")
         XCTAssertEqual(sections[safe: 2]?.category, "desserts")
+        
+    }
+    func testMenuWithOneCategoryReturnOneSection() {
     }
     func testEmptyMenuReturnsEmptySections() {
         let menu = [MenuItem]()
