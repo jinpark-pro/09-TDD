@@ -16,6 +16,9 @@ final class MenuRowViewModelTests: XCTestCase {
     }
     
     func testWhenItemIsSpicyTextIsItemNameWithChiliEmoji() {
+        let item = MenuItem.fixture(name: "name", spicy: true)
+        let viewModel = MenuRow.ViewModel(item: item)
+        XCTAssertEqual(viewModel.text, "name 🌶️")
         
     }
 }
